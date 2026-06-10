@@ -1,6 +1,3 @@
-Kalo ERORR fix sendiri gausa banyak tanya
-hasilnya bakal ada di folder **data_nib**
-
 Kalo proyeknya kosong isinya kaya gini :
 {
         "nama_perusahaan": "XXXXXXXXXXX",
