@@ -1,28 +1,46 @@
-Kalo proyeknya kosong isinya kaya gini :
+## Installation
+
+```bash
+pip install -r requirements.txt
+playwright install
+```
+
+## Usage
+
+```bash
+python app.py
+```
+
+Enter one or more NIBs when prompted.
+
+## Output Example
+
+```json
 {
-        "nama_perusahaan": "XXXXXXXXXXX",
+    "nama_perusahaan": "Company Name",
+    "skala_badan_usaha": "Usaha Mikro",
+    "projects_investment": {
+        "R-XXXXXXXXXXXXX": 5000000
+    }
+}
+```
+
+If a company has no projects:
+
+```json
+{
+    "nama_perusahaan": "Company Name",
     "skala_badan_usaha": "Usaha Mikro",
     "projects_investment": {}
 }
+```
 
-Kalo ada proyeknya :
-{
-    "nama_perusahaan": "XXXXXXXXXXXXXXXXX",
-    "skala_badan_usaha": "Usaha Mikro",
-    "projects_investment": {
-        "R-XXXXXXXXXXXXX": 0,
-        "R-XXXXXXXXXXXXXXX": 0,
-        "R-XXXXXXXXXXXXXX1": 0,
-        "R-XXXXXXXXXXXXXXXXXXXX": 5000000,
-        "R-XXXXXXXXXXXXXXXXXXXX": 50000000,
-        "R-XXXXXXXXXXXXXXXX": 50000000,
-        "R-XXXXXXXXXXXXXXXXXXXX": 50000000,
-        "R-XXXXXXXXXXXXXXXXXXXXX3": 5000000
-    }
-}
+## Notes
 
-**Kadang BUG pas nyari perusahaan, itu tinggal jalanin ulang**
+* Replace the OSS login credentials before running.
+* Output files are automatically saved in the `data_nib` folder.
+* If the search occasionally fails, simply run the script again.
 
-Install Kebutuhan :
-pip install -r requirements.txt
-playwright install
+## Author
+
+Aufatir Diaul Haq
